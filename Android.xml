@@ -320,5 +320,27 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
+  <template name="strict" value="if (BuildConfig.DEBUG) { &#10;  StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()&#10; .detectAll().penaltyLog().build());&#10;      StrictMode.setVmPolicy(new StrictMode.VmPolicy.Builder()&#10;  .detectAll().penaltyLog().penaltyDeath().build());  &#10;}" description="Strict check template" toReformat="true" toShortenFQNames="false">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  
 </templateSet>
 
